@@ -1,0 +1,1 @@
+Okay guys, the plan of action for tomorrow is to take the NJ Transit Northeast Corridor (Train #3831) until the next stop - Secaucus Junction. We'll transfer to the Port Jervis Line (Train # 0045) 
