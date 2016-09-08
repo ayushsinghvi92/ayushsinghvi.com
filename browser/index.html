@@ -31,7 +31,7 @@
 <script type="text/javascript" src="/angular/angular.js" defer></script>
 <script type="text/javascript" src="/angular-ui-router/release/angular-ui-router.js" defer></script>
 <!-- App Files -->
-<script type="text/javascript" src="/js/main.js" defer></script>
+<script type="text/javascript" src="/main.js" defer></script>
 
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -344,10 +344,10 @@ we were well fed and drunk all the time!</p>
             </div>
           <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
               <div class="form" ng-controller="formCtrl" ng-submit='submitForm()'>
-                  <input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                    <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                  <textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                    <input class="input-btn" type="submit" value="send message">
+                  <input ng-model ='form.name' class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+                  <input ng-model='form.email' class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+                  <textarea ng-model='form.message' class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+                    <input class="input-btn" type="submit" ng-click='submitForm()' value="send message">
                 </div>  
             </div>
         </div>
