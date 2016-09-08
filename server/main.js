@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan')
 const https = require ('https')
-const port = 8000;
+const port = process.env.PORT || 8000;
 app.use(morgan('dev'))
 app.use(require('./middleware'))
 app.use('/',require('./routes'))

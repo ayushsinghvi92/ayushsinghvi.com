@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>Homepage</title>
+<title>Ayush Singhvi</title>
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
 
@@ -27,6 +27,11 @@
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 
+<!--Angular Core Javascriot -->
+<script type="text/javascript" src="/angular/angular.js" defer></script>
+<script type="text/javascript" src="/angular-ui-router/release/angular-ui-router.js" defer></script>
+<!-- App Files -->
+<script type="text/javascript" src="/js/main.js" defer></script>
 
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -36,18 +41,19 @@
 
 
 </head>
-<body>
+<body ng-app='portfolio'>
+<base href='/'>
 <div style="overflow:hidden;">
 <header class="header" id="header"><!--header-start-->
   <div class="container">
       <figure class="logo animated fadeInDown delay-07s">
           <a href="#"><img src="img/logo.png" alt=""></a> 
         </figure> 
-        <h1 class="animated fadeInDown delay-07s">Welcome To Knight Studios</h1>
+        <h1 class="animated fadeInDown delay-07s">Ayush Singhvi</h1>
         <ul class="we-create animated fadeInUp delay-1s">
-          <li>We are a digital agency that loves crafting beautiful websites.</li>
+          <li>Full-Stack Developer. Electrical Engineer. Nerd.</li>
         </ul>
-            <a class="link animated fadeInUp delay-1s" href="#">Get Started</a>
+            <a class="internalLink link animated fadeInUp delay-1s" href="#contact">Get In Touch</a>
     </div>
 </div>
 </header><!--header-end-->
@@ -56,13 +62,13 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
   <div class="container">
         <ul class="main-nav">
-          <li><a href="#header">Home</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
-            <li><a href="#client">Clients</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a class='internalLink' href="#header">Home</a></li>
+          <li><a class='internalLink' href="#service">Services</a></li>
+          <li><a class='internalLink' href="#skills">Skills</a></li>
+          <li class="small-logo"><a class='internalLink' href="#header"><img src="img/small-logo.png" alt=""></a></li>
+          <li><a class='internalLink' href="#Portfolio">Portfolio</a></li>
+          <li><a class='internalLink' href="#client">Clients</a></li>
+          <li><a class='internalLink' href="#contact">Contact</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
@@ -73,26 +79,26 @@
 <section class="main-section" id="service"><!--main-section-start-->
   <div class="container">
       <h2>Services</h2>
-      <h6>We offer exceptional service with complimentary hugs.</h6>
+      <h6>Stuff I do</h6>
         <div class="row">
           <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-              <div class="service-list">
-                  <div class="service-list-col1">
-                      <i class="fa-paw"></i>
-                    </div>
-                  <div class="service-list-col2">
-                        <h3>branding &amp; identity</h3>
-                        <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
-                    </div>
-                </div>
                 <div class="service-list">
                   <div class="service-list-col1">
                       <i class="fa-gear"></i>
                     </div>
                   <div class="service-list-col2">
                         <h3>web development</h3>
-                        <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
+                        <p>I like building cool things and I help others build cool things by taking up freelance projects from time to time.</p>
                     </div>
+                </div>
+                <div class="service-list">
+                  <div class="service-list-col1">
+                      <i class="fa-paw"></i>
+                  </div>
+                  <div class="service-list-col2">
+                        <h3>Teaching &amp; Preparing</h3>
+                        <p>I teach students, young and old, about JavaScript and programming. I also help prepare them for coding bootcamp or other techinical interviews.</p>
+                  </div>
                 </div>
                 <div class="service-list">
                   <div class="service-list-col1">
@@ -123,22 +129,22 @@
 
 
 
-<section class="main-section alabaster"><!--main-section alabaster-start-->
+<section class="main-section alabaster" id='skills'><!--main-section alabaster-start-->
   <div class="container">
       <div class="row">
       <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
               <img  src="img/iphone.png" alt="">
             </figure>
           <div class="col-lg-7 col-sm-8 featured-work">
-              <h2>featured work</h2>
-              <P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
+              <h2>Skills</h2>
+              <P class="padding-b">I have been hacking things together since the age of 14. I built my first Hello World in C++ and I haven't stopped since. I studied electical engineering but continued to write code in electives like Artificial Intelligence and Machine Learning. I joined Fullstack Academy in June, 2016 and graduate at the end of August.</P>
               <div class="featured-box">
                   <div class="featured-box-col1 wow fadeInRight delay-02s">
                       <i class="fa-magic"></i>
                     </div>  
                   <div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>magic of theme development</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Proficient In</h3>
+                        <p>JavaScript, SQL, Sequelize (ORM), Express.js, Angular, Node.js, Git, NVD3, CSS3, HTML5, Bootstrap and Wordpress</p>
                     </div>    
                 </div>
                 <div class="featured-box">
@@ -146,8 +152,8 @@
                       <i class="fa-gift"></i>
                     </div>  
                   <div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>neatly packaged</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Knowledgeable In</h3>
+                        <p>D3, C, C++, R, AutoCad, Responsive Design, Gulp, Mocha, Chai, jQuery, Materialize, Postgres and  WebSockets</p>
                     </div>    
                 </div>
                 <div class="featured-box">
@@ -155,8 +161,8 @@
                       <i class="fa-dashboard"></i>
                     </div>  
                   <div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>SEO optimized</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                        <h3>Some Experience With</h3>
+                        <p>React, Redux and MongoDB </p>
                     </div>    
                 </div>
                 <a class="Learn-More" href="#">Learn More</a>
@@ -337,7 +343,7 @@ we were well fed and drunk all the time!</p>
                 </ul>
             </div>
           <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-              <div class="form">
+              <div class="form" ng-controller="formCtrl" ng-submit='submitForm()'>
                   <input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
                     <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
                   <textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
@@ -387,7 +393,7 @@ we were well fed and drunk all the time!</p>
 <script type="text/javascript">
   $(window).load(function(){
     
-    $('.main-nav li a').bind('click',function(event){
+    $('.internalLink').bind('click',function(event){
       var $anchor = $(this);
       
       $('html, body').stop().animate({
