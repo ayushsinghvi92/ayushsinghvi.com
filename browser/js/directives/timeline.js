@@ -20,8 +20,8 @@ portfolio.directive('timeline', function () {
 			        radius: 600,
 			    };
 			    self.targets = [
-			        [29, 32, 48, 68],
-			        [29, 33, 38]
+			        [20 ,31, 55],
+			        [18,19,27]
 			    ];
 			    self.dotColors = [
 			        ['#13669b', 'rgba(19, 102, 155, 0.3)', 'rgba(19, 102, 155, 0.08)'],
