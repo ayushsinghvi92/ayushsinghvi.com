@@ -52,9 +52,9 @@
           <div class="team-leader-shadow"><a href="#"></a></div>
           <img src="img/ayush.jpg" alt="">
           <ul>
-            <li><a href="https://github.com/mosane"><i class="fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ayushsinghvi"><i class="fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/ayush.singhvi"><i class="fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://github.com/mosane"><i class="fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/ayushsinghvi"><i class="fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/ayush.singhvi"><i class="fa-facebook"></i></a></li>
           </ul>
       </div>
         </figure> 
@@ -72,7 +72,7 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
   <div class="container">
         <ul class="main-nav">
-          <li><a class='internalLink' href="#header">Home</a></li>
+          <li><a class='internalLink' href="#timeline">Timeline</a></li>
           <li><a class='internalLink' href="#service">Services</a></li>
           <li class="small-logo"><a class='internalLink' href="#header"><strong> { AS } </strong></a></li>
           <li><a class='internalLink' href="#skills">Skills</a></li>
@@ -82,8 +82,9 @@
     </div>
 </nav><!--main-nav-end-->
 
-
-<timeline></timeline>
+<section id="timeline">
+  <timeline></timeline>
+</section>
 
 <section class="main-section" id="service"><!--main-section-start-->
   <div class="container">
@@ -202,18 +203,13 @@
                   <span><strong>Monday - Friday:</strong> 8am - 8pm<br></span>
                 </div>
                 <ul class="social-link">
-                  <li class="github"><a href="https://github.com/mosane"><i class="fa-github"></i></a></li>
-                  <li class="linkedin"><a href="https://www.linkedin.com/in/ayushsinghvi"><i class="fa-linkedin"></i></a></li>
-                  <li class="facebook"><a href="https://www.facebook.com/ayush.singhvi"><i class="fa-facebook"></i></a></li>
+                  <li class="github"><a target="_blank" href="https://github.com/mosane"><i class="fa-github"></i></a></li>
+                  <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/ayushsinghvi"><i class="fa-linkedin"></i></a></li>
+                  <li class="facebook"><a target="_blank" href="https://www.facebook.com/ayush.singhvi"><i class="fa-facebook"></i></a></li>
                 </ul>
             </div>
-          <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-              <form class="form" ng-controller="formCtrl" ng-submit='submitForm()'>
-                  <input ng-model ='form.name' class="input-text" type="text" name="" placeholder="Your Name *"">
-                  <input ng-model='form.email' class="input-text" type="text" name="" placeholder="Your E-mail *">
-                  <textarea ng-model='form.message' class="input-text text-area" cols="0" rows="0">Your Message *</textarea>
-                    <input class="input-btn" type="submit" ng-click='submitForm()' value="send message">
-                </form>  
+            <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s resume-download">
+              <a class='btn-primary animated fadeInUp delay-1s' target='_blank' href='https://drive.google.com/file/d/0Bz8HRKoCywfvLXo5dUlCUVFoNEk/view'>Download Resume</a>
             </div>
         </div>
 </section>
