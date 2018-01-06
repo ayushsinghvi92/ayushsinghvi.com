@@ -13,7 +13,3 @@ app.listen(port, function () {
 
 module.exports = app;
 
-https.get('https://api.github.com/users/mosane/repos', function (err, res){
-	if(err) console.error("this is an error", err)
-	console.log('this is the res', res)
-})
